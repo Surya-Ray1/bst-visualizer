@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>BST Visualizer</title>
+    <!-- Load D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Load FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/e8fbb55064.js" crossorigin="anonymous"></script>
+    <!-- Load the main JavaScript file -->
+    <script src="./JS/app.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <header class="heading">Binary Search Tree Visualizer</header>
+    </nav>
+
+    <div class="form-container">
+      <!-- Insert Form -->
+      <form id="form1">
+        <input type="text" id="insert" placeholder="Insert" inputmode="numeric" />
+        <button type="submit" id="insert-btn" class="btn">
+          <i class="fa-sharp fa-solid fa-plus"></i>
+        </button>
+      </form>
+
+      <!-- Remove Form -->
+      <form id="form2">
+        <input type="text" id="remove" placeholder="Remove" inputmode="numeric" />
+        <button type="submit" id="remove-btn" class="btn">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </form>
+
+      <!-- Find Form -->
+      <form id="form3">
+        <input type="text" id="find" placeholder="Find" inputmode="numeric" />
+        <button type="submit" id="find-btn" class="btn">
+          <i class="fa-solid fa-search"></i>
+        </button>
+      </form>
+
+      <!-- Animation Delay Slider -->
+      <label for="animation-delay">Animation delay</label>
+      <input type="range" min="50" max="1000" value="500" id="animation-delay" />
+
+      <!-- Traversal Buttons -->
+      <div class="traversals">
+        <button id="pre" class="traversal btn">Preorder</button>
+        <button id="post" class="traversal btn">Postorder</button>
+        <button id="in" class="traversal btn">Inorder</button>
+        <button id="level" class="traversal btn">Level order</button>
+      </div>
+
+      <!-- Message Box -->
+      <div class="box">
+        <h4 id="message-heading"></h4>
+        <div id="message"></div>
+      </div>
+    </div>
+  </body>
+</html>
