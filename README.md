@@ -7,5 +7,5 @@ A beginner-friendly Java application to visualize Binary Search Tree (BST) opera
 - Visualize the structure of the tree.
 - Perform In-Order, Pre-Order, and Post-Order traversals.
 - Real-time updates with feedback on search results.
-# Live preview
-<a href="https://surya-ray1.github.io/bst-visualizer/">click here</a>
+# Output
+![Screenshot 2024-08-22 201224](https://github.com/user-attachments/assets/f3b1a737-8ce9-44e5-b5bc-cfcae4444c36)
