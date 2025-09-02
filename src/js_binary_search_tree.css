@@ -1,7 +1,6 @@
 :root {
   --animation-timing: 1.5s;
 }
-
 .app-container {
   flex-direction: row;
   justify-content: space-between;
